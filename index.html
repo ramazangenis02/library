@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Library</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@1&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="sidebar-container">
+        <div class="account-section">
+            <div class="avatar-section">
+                <img src="img/avatars/male-icon.png" class="defaultavatar" alt="default-avatar">
+            </div>
+            <div class="register-section">
+                <p class="name"></p>
+                <button class="reg-btn">Register</button>
+                <div class="register-modal-wrapper">
+                    <div class="reg-title">
+                        <h3>My<span>Library</span></h3>
+                        <h4>Registration</h4>
+                    </div>
+                    <div class="register-modal">
+                        <form class="register-form">
+                            <div class="input">
+                                <input type="text" required placeholder="First Name" class="fname">
+                            </div>
+                            <div class="input">
+                                <input type="text" required placeholder="Last Name" class="lname">
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Submit" class="submit-btn">
+                            </div>
+                            <div class="avatar-sec">
+                                <p>Select a Avatar</p>
+
+                                <div class="avatar-select">
+                                    <img src="img/avatars/undraw_female_avatar_w3jk.svg" alt="female-avatar"
+                                        class="f-avatar avatar">
+                                    <img src="img/avatars/undraw_male_avatar_323b.svg" alt="male-avatar"
+                                        class="m-avatar avatar">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="log-section">
+            <h1>Library Log</h1>
+        </div>
+        <div class="log-cards">
+            <div class="cards">
+                <h3 class="log-cards-title">Total Added Books</h3>
+                <span class="added-book">0</span>
+            </div>
+            <div class="cards">
+                <h3 class="log-cards-title">Readed Books</h3>
+                <span class="readed-book">0</span>
+            </div>
+            <div class="cards">
+                <h3 class="log-cards-title">Unread Books</h3>
+                <span class="unread-book">0</span>
+            </div>
+        </div>
+        <div class="add-book-section">
+            <h1>Add New Book</h1>
+            <div class="add-wrapper">
+                <i class="fas fa-plus add-book"></i>
+            </div>
+            <div class="add-modal">
+                <div class="title-close">
+                    <h3>My<span>Library</span></h3>
+                    <i class="fas fa-times close-btn"></i>
+                </div>
+                <form class="add-form" name="add">
+                    <div class="add-modal-inputs">
+                        <label for="title">Title</label>
+                        <input type="text" required class="title-input" placeholder="Title">
+                    </div>
+                    <div class="add-modal-inputs">
+                        <label>Author</label>
+                        <input type="text" required class="author-input" placeholder="Author">
+                    </div>
+                    <div class="add-modal-inputs">
+                        <label>Number of Pages</label>
+                        <input type="number" required class="number-input" placeholder="Number of Pages">
+                    </div>
+                    <div class="add-modal-inputs">
+                        <label>You read this book?</label>
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-section">
+                                <label>Yes</label>
+                                <input type="radio" name="yesno" required class="checkbox check-yes">
+                            </div>
+                            <div class="checkbox-section">
+                                <label>No</label>
+                                <input type="radio" name="yesno" required class="checkbox check-no">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Submit" class="add-submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="books-cards-container">
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
